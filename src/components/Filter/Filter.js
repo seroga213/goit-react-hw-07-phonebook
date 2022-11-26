@@ -1,9 +1,10 @@
+
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setFilter } from '../../store/reducer';
 
 export const Filter = () => {
-  const value = useSelector(state => state.todos.contacts.filter.value);
+  const value = useSelector(state => state.contactsSlice.contacts.filter.value);
   const dispatch = useDispatch();
 
   const onChange = e => {
